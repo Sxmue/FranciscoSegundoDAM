@@ -34,30 +34,30 @@ public class NumerosPrimos {
     }
 
 
-    //Metodo que recorre el intervalo y finaliza el programa en caso de querer terminar
+    //Metodo que recorre el intervalo
     public void recorrido() {
-            System.out.println("Buscando primos...");
-            for (int x = start; x <= fin; x++) {
-                division(x);
-            }
+        System.out.println("Buscando primos...");
+        for (int x = start; x <= fin; x++) {
+            division(x);
+        }
 
-            System.out.println("Se han encontrado " + contadorPrim + " numeros primos en el intervalo");
+        System.out.println("Se han encontrado " + contadorPrim + " numeros primos en el intervalo");
 
 
     }
 
 
-    //Metodo que se encarga de pedir el intervalo al usuario
+    //Metodo que se encarga de pedir el intervalo al usuario y terminar el programa en caso necesario
     public void start() {
         try (Scanner sc = new Scanner(System.in)) {
             start = 1;
-            while( start > 0) {
-                    System.out.println("Escriba el numero inicial (Pulsa 0 para salir):");
-                    start = sc.nextInt();
+            while (start > 0) {
+                System.out.println("Escriba el numero inicial (Pulsa 0 para salir):");
+                start = sc.nextInt();
 
-                if(start==0) {
+                if (start == 0) {
                     System.out.println("Fin del programa");
-                }else {
+                } else {
 
                     System.out.println("Escriba el numero final:");
                     fin = sc.nextInt();
