@@ -16,15 +16,11 @@ public class NumerosPrimos {
     //Variable que almacena el final del intervalo
     private int fin;
 
-    //Variable auxiliar para las comprobaciones
-    private int auxiliar = 0;
-
-    //boolean para comprobar si es la primera partida
-    private boolean ronda;
-
 
     //Metodo que se encarga de comprobar los divisores de cada numero del intervalo
     public void division(int x) {
+        //Variable auxiliar para las comprobaciones
+        int auxiliar = 0;
         for (auxiliar = fin; auxiliar >= 1; auxiliar--) {
             if (x % auxiliar == 0) {
                 contador++;
