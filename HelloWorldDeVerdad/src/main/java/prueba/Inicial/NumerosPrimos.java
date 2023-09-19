@@ -20,7 +20,7 @@ public class NumerosPrimos {
     //Metodo que se encarga de comprobar los divisores de cada numero del intervalo
     public void division(int x) {
         //Variable auxiliar para las comprobaciones
-        int auxiliar = 0;
+        int auxiliar;
         for (auxiliar = fin; auxiliar >= 1; auxiliar--) {
             if (x % auxiliar == 0) {
                 contador++;
